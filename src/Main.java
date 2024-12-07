@@ -2,14 +2,18 @@
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
-
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+//1
+        String firstName = "Ivan";
+        String middleName = "Ivanovich";
+        String lastName = "Ivanov";
+        String fullName = lastName + firstName + middleName;
+        System.out.println("ФИО сотрудника - " + fullName);
+        //2
+        fullName = "Ivanov Ivan Ivanovich";
+        System.out.println(fullName.toUpperCase());
+//3
+        String s = "Иванов Семён Семёнович";
+        String s2 = s.replace('ё', 'е');
+        System.out.println(s2);
     }
 }
